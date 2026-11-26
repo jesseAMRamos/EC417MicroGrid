@@ -79,74 +79,220 @@ model "test.tse" {
     }
 
     component Subsystem Root {
-        component "core/Voltage Source" V1 {
-        }
-        [
-            position = 8000, 8000
-        ]
-
-        component "core/Transmission Line" TL1 {
-            model = "PI"
-        }
-        [
-            position = 8300, 6000
-        ]
-
-        component "core/Resistor" Rload {
-            resistance = "100.0"
-        }
-        [
-            position = 8600, 8000
-        ]
-
         component "core/Ground" GND {
         }
         [
             position = 8300, 8300
         ]
 
-        component "core/Three-phase Meter" Meter1 {
+        component "core/Three-phase Meter" "meter #3" {
             Ts = "replaced_by_execution_rate"
         }
         [
-            position = 9000, 8200
+            position = 9000, 9000
             size = 56, 240
         ]
 
-        connect V1.p_node TL1.a_in as Connection1
-        connect TL1.a_out Rload.p_node as Connection2
-        connect Rload.n_node GND.node as Connection3
-        connect V1.n_node GND.node as Connection4
-        connect TL1.gnd GND.node as Connection5
+        component "core/Diesel Genset" "gen #3" {
+            Vn = "[100, 0]"
+            phaseOff = "0.0"
+        }
+        [
+            position = 8500, 9300
+        ]
+
+        component "core/Bus Join" "GenConfig #3" {
+            inputs = "9"
+        }
+        [
+            position = 8848, 9300
+        ]
+
+        component "core/Constant" "Gen_On #3" {
+        }
+        [
+            position = 8800, 9300
+        ]
+
+        component "core/Constant" "Vref #3" {
+        }
+        [
+            position = 8800, 9360
+        ]
+
+        component "core/Constant" "wref #3" {
+        }
+        [
+            position = 8800, 9420
+        ]
+
+        component "core/Constant" "Pref #3" {
+            value = "1.05"
+        }
+        [
+            position = 8800, 9480
+        ]
+
+        component "core/Constant" "pf_ref #3" {
+            value = "1.01"
+        }
+        [
+            position = 8800, 9540
+        ]
+
+        component "core/Constant" "Gen_OP_mode #3" {
+            value = "2"
+        }
+        [
+            position = 8800, 9600
+        ]
+
+        component "core/Constant" "Gen_Control_mode #3" {
+            value = "0"
+        }
+        [
+            position = 8800, 9660
+        ]
+
+        component "core/Constant" "Load_share_on #3" {
+            value = "0"
+        }
+        [
+            position = 8800, 9720
+        ]
+
+        component "core/Constant" "Load_share #3" {
+            value = "0"
+        }
+        [
+            position = 8800, 9780
+        ]
+
+        component "core/Three-phase Variable Load" Load3 {
+        }
+        [
+            position = 9300, 9152
+        ]
+
+        connect "Gen_On #3.out" "GenConfig #3.in" as Connection1
+        connect "Vref #3.out" "GenConfig #3.in1" as Connection2
+        connect "wref #3.out" "GenConfig #3.in2" as Connection3
+        connect "Pref #3.out" "GenConfig #3.in3" as Connection4
+        connect "pf_ref #3.out" "GenConfig #3.in4" as Connection5
+        connect "Gen_OP_mode #3.out" "GenConfig #3.in5" as Connection6
+        connect "Gen_Control_mode #3.out" "GenConfig #3.in6" as Connection7
+        connect "Load_share_on #3.out" "GenConfig #3.in7" as Connection8
+        connect "Load_share #3.out" "GenConfig #3.in8" as Connection9
+        connect "GenConfig #3.out" "gen #3.Inputs" as Connection10
+        connect "gen #3.A" "meter #3.A+" as Connection11
+        connect "gen #3.B" "meter #3.B+" as Connection12
+        connect "gen #3.C" "meter #3.C+" as Connection13
+        connect "meter #3.GND" GND.node as Connection14
+        connect Load3.A "meter #3.A-" as Connection15
+        connect Load3.B "meter #3.B-" as Connection16
+        connect Load3.C "meter #3.C-" as Connection17
     }
 
     default {
-        "core/Resistor" {
-            resistance = "1"
-            param_set = ""
+        "core/Bus Join" {
+            inputs = "2"
+            force_tml = "True"
+            execution_rate = "inherit"
         }
 
-        "core/Voltage Source" {
-            sig_input = "False"
-            type = "signal generator"
-            param_set = "1phase"
-            parent_label = ""
-            dtsm_switch_name = ""
-            addr = "0"
-            spc_nb = "0"
+        "core/Constant" {
+            value = "1"
+            signal_type = "real"
             execution_rate = "100e-6"
-            cpd_visible = "True"
-            enable_snb = "False"
-            snb_type = "R2"
-            R2 = "0.0"
-            L1 = "0.1"
-            override_signal_name = "False"
-            signal_name = ""
-            init_source_nature = "Constant"
-            init_const_value = "0.0"
-            init_rms_value = "0.0"
-            init_frequency = "50.0"
-            init_phase = "0.0"
+            _tunable = "False"
+        }
+
+        "core/Diesel Genset" {
+            Sb = "2.2e6"
+            Vn = "480.0"
+            f = "60.0"
+            load = "5"
+            Ts = "200e-6"
+            Rs = "9.4035e-4"
+            Lls = "1.389e-5"
+            Lmd = "6.5282e-4"
+            Lmq = "4.778e-4"
+            Rf_prime = "2.1574e-4"
+            Llfd_prime = "1.4195e-4"
+            Rkd = "0.0443938909091"
+            Rkq = "0.00399796363636"
+            Llkd = "0.00155586168397"
+            Llkq = "9.96738215238e-05"
+            Ns_Nfd = "0.02512"
+            Ns_Nkd = "1.0"
+            Ns_Nkq = "1.0"
+            pms = "2.0"
+            J = "42.9467"
+            F = "0.572003113298"
+            T1 = "1.0e-4"
+            T2 = "1e-6"
+            T3 = "0.5001"
+            K = "10.0"
+            T4 = "25.0e-3"
+            T5 = "9.0e-4"
+            T6 = "5.74e-3"
+            Pm0 = "0.0"
+            Tmax = "10"
+            Tmin = "-10"
+            Td = "24.0e-3"
+            Tr = "2.0e-6"
+            exc_Kp = "0.025"
+            exc_Ki = "0.007"
+            Ka = "1.0"
+            Ta = "2.0e-3"
+            Vrmax = "10.0"
+            Vrmin = "-10.0"
+            Te = "1.0e-8"
+            Ke = "1.0"
+            Kf = "0.01"
+            Tf = "2.0e-6"
+            Vt0 = "0.0"
+            Vf0 = "0.0"
+            Efmax = "[\'inf\']"
+            Efmin = "[\'-inf\']"
+            delta_f = "0.5"
+            delta_phi = "1.0"
+            phase_Kp = "0.01"
+            phase_Ki = "0.00012"
+            phase_upLim = "0.1"
+            phase_lowLim = "-0.1"
+            phaseOff = "0"
+            dw_K = "1.0"
+            V_Kp = "0.0071"
+            V_Ki = "0.0354"
+            V_upLim = "1"
+            V_lowLim = "-1"
+            delta_V = "1.0"
+            w_sp_Kp = "0.01"
+            w_sp_Ki = "0.01"
+            w_sp_upLim = "10"
+            w_sp_lowLim = "-10"
+            P_droop = "2.7"
+            P_rise = "10"
+            P_fall = "-10"
+            w_droop = "0.1"
+            w_rise = "10"
+            w_fall = "-10"
+            gov_Kp = "0.5"
+            delta_wn = "0.1"
+            inner_w_droop = "0.1"
+            inner_w_rise = "10"
+            inner_w_fall = "-10"
+            pf_Kp = "0.05"
+            pf_Ki = "0.075"
+            pf_upLim = "10"
+            pf_lowLim = "-10"
+            pf_rise = "10"
+            pf_fall = "-10"
+            exc_dwn = "75"
+            V_rise = "10"
+            V_fall = "-10"
+            V_inner_droop = "0.1"
         }
 
         "core/Three-phase Meter" {
@@ -193,74 +339,28 @@ model "test.tse" {
             enable_inst_ports = "False"
         }
 
-        "core/Transmission Line" {
-            model = "RL coupled"
-            num_of_phases = "3"
-            model_def = "Geometry"
-            unit_sys = "imperial"
-            unit_sys_edited_flag = "0"
-            Length_metric = "100.0"
-            Length_miles = "62.1371"
-            Frequency = "60.0"
-            Earth_resistivity = "100"
-            X_axis_1_metric = "-1.0668"
-            Y_axis_1_metric = "8.5344"
-            GMR_1_metric = "0.00743712"
-            RD_1_metric = "0.009156192"
-            Rs_1_metric = "0.19013958482462417"
-            X_axis_1_imperial = "-3.5"
-            Y_axis_1_imperial = "28.0"
-            GMR_1_imperial = "0.0244"
-            RD_1_imperial = "0.03004"
-            Rs_1_imperial = "0.306"
-            X_axis_2_metric = "-0.3048"
-            Y_axis_2_metric = "8.5344"
-            GMR_2_metric = "0.00743712"
-            RD_2_metric = "0.009156192"
-            Rs_2_metric = "0.19013958482462417"
-            X_axis_2_imperial = "-1.0"
-            Y_axis_2_imperial = "28.0"
-            GMR_2_imperial = "0.0244"
-            RD_2_imperial = "0.03004"
-            Rs_2_imperial = "0.306"
-            X_axis_3_metric = "1.0668"
-            Y_axis_3_metric = "8.5344"
-            GMR_3_metric = "0.00743712"
-            RD_3_metric = "0.009156192"
-            Rs_3_metric = "0.19013958482462417"
-            X_axis_3_imperial = "3.5"
-            Y_axis_3_imperial = "28.0"
-            GMR_3_imperial = "0.0244"
-            RD_3_imperial = "0.03004"
-            Rs_3_imperial = "0.306"
-            X_axis_4_metric = "0.1524"
-            Y_axis_4_metric = "7.3152"
-            GMR_4_metric = "0.00248"
-            RD_4_metric = "0.00714"
-            Rs_4_metric = "0.3678"
-            X_axis_4_imperial = "0.5"
-            Y_axis_4_imperial = "24.0"
-            GMR_4_imperial = "0.00814"
-            RD_4_imperial = "0.02345"
-            Rs_4_imperial = "0.592"
-            R_metric = "[[0.2481, 0.0579, 0.0579], [0.0579, 0.2481, 0.0579], [0.0579, 0.0579, 0.2481]]"
-            R_imperial = "[[0.4, 0.093, 0.093], [0.093, 0.4, 0.093], [0.093, 0.093, 0.4]]"
-            L_metric = "[[0.00233, 0.00140, 0.00140], [0.00140, 0.00233, 0.00140], [0.00140, 0.00140, 0.00233]]"
-            L_imperial = "[[0.00374, 0.0022, 0.0022], [0.0022, 0.00374, 0.0022], [0.0022, 0.0022, 0.00374]]"
-            C_metric = "[[8.546e-9, 0, 0], [0, 8.546e-9, 0], [0, 0, 8.546e-9]]"
-            C_imperial = "[[1.471e-8, 0, 0], [0, 1.530e-8, 0], [0, 0, 1.375e-8]]"
-            R_sequence_metric = "[[0.3864, 0, 0],[0, 0.01273, 0], [0, 0, 0.01273]]"
-            L_sequence_metric = "[[4.1264e-3, 0, 0],[0, 0.9337e-3, 0], [0, 0, 0.9337e-3]]"
-            C_sequence_metric = "[[7.751e-9, 0, 0],[0, 12.74e-9, 0], [0, 0, 12.74e-9]]"
-            R_sequence_imperial = "[[0.6218, 0, 0],[0, 0.0204, 0], [0, 0, 0.0204]]"
-            L_sequence_imperial = "[[0.00664, 0, 0],[0, 0.00150, 0], [0, 0, 0.00150]]"
-            C_sequence_imperial = "[[1.247e-8, 0, 0],[0, 2.0503e-8, 0], [0, 0, 2.0503e-8]]"
-            import_from_geometry = "Import from Geometry"
-            import_from_RLC = "Import from RLC"
-            type_of_trans = "trans_line"
-            embedded_coupling = "False"
-            ratio_type = "Manual"
-            ratio = "0.01"
+        "core/Three-phase Variable Load" {
+            core_type = "Series"
+            Vnom_rms = "400"
+            fnom = "50"
+            Snom = "3000"
+            pf_nom = "0.9"
+            include_harmonic = "False"
+            harmonic_list = "[1,3,5,7,9]"
+            execution_rate = "100e-6"
+            hil_cpu_core_id = "Auto"
+            Z_ind_pu = "0.05"
+            pf_snubber = "0.4"
+            enable_ext_ref = "False"
+            enable_outputs = "False"
+            cpl_type = "None"
+            R_snb = "1e1"
+            C_snb = "1e-6"
+            cpl_orientation = "Load"
+            cpl_fixed_snb = "True"
+            cpl_inductance = "1e-6"
+            enable_three_wire = "False"
+            voltage_meas_in_adj_core = "False"
         }
     }
 }
