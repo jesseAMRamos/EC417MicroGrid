@@ -1,7 +1,7 @@
 version = 4.2
 
 //
-// Saved by sw version: 2026.3
+// Saved by sw version: 2027.1 ALPHA7
 //
 
 model "Frequency support of renewable grid using large scale ESS." {
@@ -371,23 +371,22 @@ model "Frequency support of renewable grid using large scale ESS." {
             component "core/Three Phase Wound Rotor Synchronous Machine (Generic)" "3 ph WRSYNC Generic7" {
             }
             [
-                position = 13232, 5676
+                position = 12588, 5268
+                rotation = right
                 scale = 1, -1
             ]
 
             component "core/Transmission Line" "Transmission Line9" {
             }
             [
-                position = 13088, 5044
-                rotation = right
+                position = 11956, 5412
             ]
 
             component "core/Three-phase Meter" "BUS 32 (Three-phase Meter4)1" {
                 Ts = "replaced_by_execution_rate"
             }
             [
-                position = 13108, 5504
-                rotation = right
+                position = 12416, 5392
                 size = 56, 240
             ]
 
@@ -403,29 +402,29 @@ model "Frequency support of renewable grid using large scale ESS." {
                 VCn = "480/np.sqrt(3)"
             }
             [
-                position = 13100, 5276
-                rotation = down
+                position = 12188, 5400
+                rotation = right
                 size = 184, 152
             ]
 
             component "core/Three Phase Two Winding Transformer" Tr6 {
             }
             [
-                position = 13096, 4800
-                rotation = left
+                position = 11712, 5404
+                rotation = down
             ]
 
             component "core/Three Phase Wound Rotor Synchronous Machine (Generic)" "3 ph WRSYNC Generic8" {
             }
             [
-                position = 13172, 916
+                position = 11936, 3692
                 scale = 1, -1
             ]
 
             component "core/Transmission Line" "Transmission Line10" {
             }
             [
-                position = 13028, 284
+                position = 11792, 3060
                 rotation = right
             ]
 
@@ -433,7 +432,7 @@ model "Frequency support of renewable grid using large scale ESS." {
                 Ts = "replaced_by_execution_rate"
             }
             [
-                position = 13048, 744
+                position = 11812, 3520
                 rotation = right
                 size = 56, 240
             ]
@@ -450,7 +449,7 @@ model "Frequency support of renewable grid using large scale ESS." {
                 VCn = "480/np.sqrt(3)"
             }
             [
-                position = 13040, 516
+                position = 11804, 3292
                 rotation = down
                 size = 184, 152
             ]
@@ -458,7 +457,7 @@ model "Frequency support of renewable grid using large scale ESS." {
             component "core/Three Phase Two Winding Transformer" Tr7 {
             }
             [
-                position = 13036, 40
+                position = 11800, 2816
                 rotation = left
             ]
 
@@ -512,23 +511,24 @@ model "Frequency support of renewable grid using large scale ESS." {
             component "core/Three Phase Wound Rotor Synchronous Machine (Generic)" "3 ph WRSYNC Generic10" {
             }
             [
-                position = 2836, 480
+                position = 3248, 880
+                rotation = down
                 scale = 1, -1
             ]
 
             component "core/Transmission Line" "Transmission Line12" {
             }
             [
-                position = 2692, -152
-                rotation = right
+                position = 3392, 1512
+                rotation = left
             ]
 
             component "core/Three-phase Meter" "BUS 30 (Three-phase Meter4)4" {
                 Ts = "replaced_by_execution_rate"
             }
             [
-                position = 2712, 304
-                rotation = right
+                position = 3372, 1056
+                rotation = left
                 size = 56, 240
             ]
 
@@ -544,16 +544,15 @@ model "Frequency support of renewable grid using large scale ESS." {
                 VCn = "480/np.sqrt(3)"
             }
             [
-                position = 2704, 80
-                rotation = down
+                position = 3380, 1280
                 size = 184, 152
             ]
 
             component "core/Three Phase Two Winding Transformer" Tr9 {
             }
             [
-                position = 2700, -400
-                rotation = left
+                position = 3384, 1760
+                rotation = right
             ]
 
             component "core/Three Phase Wound Rotor Synchronous Machine (Generic)" "3 ph WRSYNC Generic11" {
@@ -570,7 +569,7 @@ model "Frequency support of renewable grid using large scale ESS." {
                 rotation = right
             ]
 
-            component "core/Three-phase Meter" "BUS 32 (Three-phase Meter4)5" {
+            component "core/Three-phase Meter" "Bus 39" {
                 Ts = "replaced_by_execution_rate"
             }
             [
@@ -596,7 +595,7 @@ model "Frequency support of renewable grid using large scale ESS." {
                 size = 184, 152
             ]
 
-            component "core/Three-phase Meter" "BUS 36 (Three-phase Meter4)4" {
+            component "core/Three-phase Meter" "BUS 23" {
                 Ts = "replaced_by_execution_rate"
             }
             [
@@ -617,7 +616,7 @@ model "Frequency support of renewable grid using large scale ESS." {
             component "core/Three Phase Two Winding Transformer" Tr10 {
             }
             [
-                position = 9344, 6644
+                position = 9400, 6660
                 rotation = left
             ]
 
@@ -625,16 +624,7 @@ model "Frequency support of renewable grid using large scale ESS." {
                 Ts = "replaced_by_execution_rate"
             }
             [
-                position = 9788, 6572
-                rotation = right
-                size = 56, 240
-            ]
-
-            component "core/Three-phase Meter" "BUS 36 (Three-phase Meter4)7" {
-                Ts = "replaced_by_execution_rate"
-            }
-            [
-                position = 10332, 6276
+                position = 9704, 6480
                 rotation = right
                 size = 56, 240
             ]
@@ -642,7 +632,7 @@ model "Frequency support of renewable grid using large scale ESS." {
             component "core/Transmission Line" "Transmission Line14" {
             }
             [
-                position = 10868, 7088
+                position = 10864, 7088
                 rotation = right
             ]
 
@@ -657,6 +647,445 @@ model "Frequency support of renewable grid using large scale ESS." {
             }
             [
                 position = 9412, 7072
+                rotation = right
+            ]
+
+            component "core/Transmission Line" "Transmission Line17" {
+            }
+            [
+                position = 10600, 6308
+                rotation = right
+            ]
+
+            component "core/Three-phase Meter" "BUS 22" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 11224, 5664
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Transmission Line" "Transmission Line 22-23" {
+            }
+            [
+                position = 11244, 5940
+                rotation = right
+            ]
+
+            component "core/Transmission Line" "Transmission Line18" {
+            }
+            [
+                position = 11380, 5412
+            ]
+
+            component "core/Three-phase Meter" "BUS 21" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 11172, 5008
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Three-phase Meter" "BUS 16" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 10532, 4508
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Transmission Line" "Transmission Line19" {
+            }
+            [
+                position = 11164, 4760
+                rotation = right
+            ]
+
+            component "core/Transmission Line" "Transmission Line20" {
+            }
+            [
+                position = 11180, 5272
+                rotation = right
+            ]
+
+            component "core/Transmission Line" "Transmission Line21" {
+            }
+            [
+                position = 10332, 5604
+                rotation = right
+            ]
+
+            component "core/Transmission Line" "Transmission Line22" {
+            }
+            [
+                position = 9644, 5020
+                rotation = right
+            ]
+
+            component "core/Three-phase Meter" "BUS 17" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 9720, 4064
+                size = 56, 240
+            ]
+
+            component "core/Transmission Line" "Transmission Line23" {
+            }
+            [
+                position = 10500, 4220
+                rotation = right
+            ]
+
+            component "core/Transmission Line" "Transmission Line24" {
+            }
+            [
+                position = 10052, 3740
+                rotation = right
+            ]
+
+            component "core/Three-phase Meter" "BUS 34 (Three-phase Meter4)2" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 11168, 7120
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load11" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 11160, 6892
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load12" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 11504, 5632
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Three-phase Meter" "Bus 24" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 10576, 6104
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load13" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 10372, 5864
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load14" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 11408, 4856
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load15" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 10768, 4316
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load16" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 9540, 3832
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Three-phase Meter" "Bus 28" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 10500, 2440
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load17" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 10492, 2212
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Three-phase Meter" "Bus 26" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 9788, 2440
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load18" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 9780, 2212
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Three-phase Meter" "Bus 29" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 11276, 2444
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load19" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 11268, 2216
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Three-phase Meter" "Bus 27" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 10020, 3484
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load20" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 10028, 3308
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Transmission Line" "Transmission Line25" {
+            }
+            [
+                position = 10044, 3060
+                rotation = right
+            ]
+
+            component "core/Transmission Line" "Transmission Line26" {
+            }
+            [
+                position = 10164, 2528
+            ]
+
+            component "core/Transmission Line" "Transmission Line27" {
+            }
+            [
+                position = 10928, 2540
+            ]
+
+            component "core/Three-phase Meter" "Bus 1" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 1572, 3584
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load21" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 1564, 3356
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Transmission Line" "Transmission Line28" {
+            }
+            [
+                position = 2100, 3352
+                rotation = right
+            ]
+
+            component "core/Three-phase Meter" "Bus 2" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 2700, 2884
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load22" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 2696, 2700
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Transmission Line" "Transmission Line29" {
+            }
+            [
+                position = 3148, 2716
+                rotation = right
+            ]
+
+            component "core/Three-phase Meter" "Bus 25" {
+                Ts = "replaced_by_execution_rate"
+            }
+            [
+                position = 3476, 2500
+                rotation = right
+                size = 56, 240
+            ]
+
+            component "core/Constant Impedance Load" "Constant Impedance Load23" {
+                SAB = "1000000.0/3"
+                SAn = "1000000.0/3"
+                SBC = "1000000.0/3"
+                SBn = "1000000.0/3"
+                SCA = "1000000.0/3"
+                SCn = "1000000.0/3"
+                VAn = "480/np.sqrt(3)"
+                VBn = "480/np.sqrt(3)"
+                VCn = "480/np.sqrt(3)"
+            }
+            [
+                position = 3472, 2316
+                rotation = down
+                size = 184, 152
+            ]
+
+            component "core/Transmission Line" "Transmission Line30" {
+            }
+            [
+                position = 3344, 2040
                 rotation = right
             ]
 
@@ -754,32 +1183,32 @@ model "Frequency support of renewable grid using large scale ESS." {
 
             junction Junction16 pe
             [
-                position = 13012, 5452
+                position = 12364, 5488
             ]
 
             junction Junction17 pe
             [
-                position = 13108, 5436
+                position = 12348, 5392
             ]
 
             junction Junction18 pe
             [
-                position = 13204, 5436
+                position = 12348, 5296
             ]
 
             junction Junction19 pe
             [
-                position = 12952, 692
+                position = 11716, 3468
             ]
 
             junction Junction20 pe
             [
-                position = 13048, 676
+                position = 11812, 3452
             ]
 
             junction Junction21 pe
             [
-                position = 13144, 676
+                position = 11908, 3452
             ]
 
             junction Junction22 pe
@@ -799,17 +1228,17 @@ model "Frequency support of renewable grid using large scale ESS." {
 
             junction Junction25 pe
             [
-                position = 2616, 256
+                position = 3468, 1104
             ]
 
             junction Junction26 pe
             [
-                position = 2712, 240
+                position = 3372, 1120
             ]
 
             junction Junction27 pe
             [
-                position = 2808, 240
+                position = 3276, 1120
             ]
 
             junction Junction28 pe
@@ -825,6 +1254,281 @@ model "Frequency support of renewable grid using large scale ESS." {
             junction Junction30 pe
             [
                 position = 1092, 4304
+            ]
+
+            junction Junction31 pe
+            [
+                position = 10720, 6852
+            ]
+
+            junction Junction32 pe
+            [
+                position = 10860, 6664
+            ]
+
+            junction Junction33 pe
+            [
+                position = 10956, 6580
+            ]
+
+            junction Junction34 pe
+            [
+                position = 11124, 5588
+            ]
+
+            junction Junction35 pe
+            [
+                position = 11216, 5616
+            ]
+
+            junction Junction36 pe
+            [
+                position = 11256, 5580
+            ]
+
+            junction Junction37 pe
+            [
+                position = 10436, 4564
+            ]
+
+            junction Junction38 pe
+            [
+                position = 10528, 4572
+            ]
+
+            junction Junction39 pe
+            [
+                position = 10644, 4548
+            ]
+
+            junction Junction40 pe
+            [
+                position = 9800, 6568
+            ]
+
+            junction Junction41 pe
+            [
+                position = 9704, 6540
+            ]
+
+            junction Junction42 pe
+            [
+                position = 9608, 6520
+            ]
+
+            junction Junction43 pe
+            [
+                position = 10632, 4552
+            ]
+
+            junction Junction44 pe
+            [
+                position = 10532, 4548
+            ]
+
+            junction Junction45 pe
+            [
+                position = 10436, 4548
+            ]
+
+            junction Junction46 pe
+            [
+                position = 10300, 5968
+            ]
+
+            junction Junction47 pe
+            [
+                position = 10372, 5988
+            ]
+
+            junction Junction48 pe
+            [
+                position = 10444, 5980
+            ]
+
+            junction Junction49 pe
+            [
+                position = 10436, 4440
+            ]
+
+            junction Junction50 pe
+            [
+                position = 10532, 4420
+            ]
+
+            junction Junction51 pe
+            [
+                position = 10628, 4400
+            ]
+
+            junction Junction52 pe
+            [
+                position = 11076, 4952
+            ]
+
+            junction Junction53 pe
+            [
+                position = 11172, 4940
+            ]
+
+            junction Junction54 pe
+            [
+                position = 11268, 4964
+            ]
+
+            junction Junction55 pe
+            [
+                position = 11320, 5776
+            ]
+
+            junction Junction56 pe
+            [
+                position = 11244, 5748
+            ]
+
+            junction Junction57 pe
+            [
+                position = 11128, 5716
+            ]
+
+            junction Junction58 pe
+            [
+                position = 9768, 4160
+            ]
+
+            junction Junction59 pe
+            [
+                position = 9904, 4024
+            ]
+
+            junction Junction60 pe
+            [
+                position = 10068, 3964
+            ]
+
+            junction Junction61 pe
+            [
+                position = 9924, 3440
+            ]
+
+            junction Junction62 pe
+            [
+                position = 10028, 3400
+            ]
+
+            junction Junction63 pe
+            [
+                position = 10100, 3400
+            ]
+
+            junction Junction64 pe
+            [
+                position = 9692, 2524
+            ]
+
+            junction Junction65 pe
+            [
+                position = 9788, 2516
+            ]
+
+            junction Junction66 pe
+            [
+                position = 9884, 2504
+            ]
+
+            junction Junction67 pe
+            [
+                position = 10404, 2544
+            ]
+
+            junction Junction68 pe
+            [
+                position = 10504, 2528
+            ]
+
+            junction Junction69 pe
+            [
+                position = 10596, 2488
+            ]
+
+            junction Junction70 pe
+            [
+                position = 11180, 2484
+            ]
+
+            junction Junction71 pe
+            [
+                position = 11276, 2540
+            ]
+
+            junction Junction72 pe
+            [
+                position = 11372, 2504
+            ]
+
+            junction Junction73 pe
+            [
+                position = 1476, 3532
+            ]
+
+            junction Junction74 pe
+            [
+                position = 1572, 3516
+            ]
+
+            junction Junction75 pe
+            [
+                position = 1668, 3516
+            ]
+
+            junction Junction76 pe
+            [
+                position = 2604, 2832
+            ]
+
+            junction Junction77 pe
+            [
+                position = 2700, 2816
+            ]
+
+            junction Junction78 pe
+            [
+                position = 2796, 2816
+            ]
+
+            junction Junction79 pe
+            [
+                position = 1492, 3448
+            ]
+
+            junction Junction80 pe
+            [
+                position = 1564, 3500
+            ]
+
+            junction Junction81 pe
+            [
+                position = 1668, 3536
+            ]
+
+            junction Junction82 pe
+            [
+                position = 3380, 2448
+            ]
+
+            junction Junction83 pe
+            [
+                position = 3476, 2432
+            ]
+
+            junction Junction84 pe
+            [
+                position = 3572, 2432
+            ]
+
+            junction Junction85 pe
+            [
+                position = 3400, 2416
             ]
 
             connect P2 P1 as Connection1
@@ -953,15 +1657,15 @@ model "Frequency support of renewable grid using large scale ESS." {
             connect "Transmission Line8.c_in" Tr5.prm_1 as Connection100
             connect "3 ph WRSYNC Generic7.C" "BUS 32 (Three-phase Meter4)1.C-" as Connection101
             [
-                breakpoints = 12976, 5632; 12976, 5556; 13008, 5552
+                breakpoints = 12544, 5524; 12468, 5524; 12464, 5492
             ]
             connect "3 ph WRSYNC Generic7.B" "BUS 32 (Three-phase Meter4)1.B-" as Connection102
             [
-                breakpoints = 13116, 5668
+                breakpoints = 12580, 5384
             ]
             connect "3 ph WRSYNC Generic7.A" "BUS 32 (Three-phase Meter4)1.A-" as Connection103
             [
-                breakpoints = 13164, 5564; 13208, 5564
+                breakpoints = 12476, 5336; 12476, 5292
             ]
             connect "BUS 32 (Three-phase Meter4)1.C+" Junction16 as Connection104
             connect Junction16 "Transmission Line9.c_out" as Connection105
@@ -969,6 +1673,9 @@ model "Frequency support of renewable grid using large scale ESS." {
             connect "BUS 32 (Three-phase Meter4)1.B+" Junction17 as Connection107
             connect Junction17 "Transmission Line9.b_out" as Connection108
             connect "Constant Impedance Load6.B" Junction17 as Connection109
+            [
+                breakpoints = 12264, 5612; 12280, 5612
+            ]
             connect "BUS 32 (Three-phase Meter4)1.A+" Junction18 as Connection110
             connect Junction18 "Transmission Line9.a_out" as Connection111
             connect "Constant Impedance Load6.A" Junction18 as Connection112
@@ -977,15 +1684,15 @@ model "Frequency support of renewable grid using large scale ESS." {
             connect "Transmission Line9.c_in" Tr6.prm_1 as Connection115
             connect "3 ph WRSYNC Generic8.C" "BUS 38 (Three-phase Meter4)2.C-" as Connection116
             [
-                breakpoints = 12916, 872; 12916, 796; 12948, 792
+                breakpoints = 11680, 3648; 11680, 3572; 11712, 3568
             ]
             connect "3 ph WRSYNC Generic8.B" "BUS 38 (Three-phase Meter4)2.B-" as Connection117
             [
-                breakpoints = 13056, 908
+                breakpoints = 11820, 3684
             ]
             connect "3 ph WRSYNC Generic8.A" "BUS 38 (Three-phase Meter4)2.A-" as Connection118
             [
-                breakpoints = 13104, 804; 13148, 804
+                breakpoints = 11868, 3580; 11912, 3580
             ]
             connect "BUS 38 (Three-phase Meter4)2.C+" Junction19 as Connection119
             connect Junction19 "Transmission Line10.c_out" as Connection120
@@ -1025,15 +1732,15 @@ model "Frequency support of renewable grid using large scale ESS." {
             connect "Transmission Line11.c_in" Tr8.prm_1 as Connection145
             connect "3 ph WRSYNC Generic10.C" "BUS 30 (Three-phase Meter4)4.C-" as Connection146
             [
-                breakpoints = 2580, 432; 2580, 360; 2612, 352
+                breakpoints = 3504, 928; 3504, 1000; 3472, 1008
             ]
             connect "3 ph WRSYNC Generic10.B" "BUS 30 (Three-phase Meter4)4.B-" as Connection147
             [
-                breakpoints = 2720, 472
+                breakpoints = 3364, 888
             ]
             connect "3 ph WRSYNC Generic10.A" "BUS 30 (Three-phase Meter4)4.A-" as Connection148
             [
-                breakpoints = 2768, 368; 2812, 368
+                breakpoints = 3316, 992; 3272, 992
             ]
             connect "BUS 30 (Three-phase Meter4)4.C+" Junction25 as Connection149
             connect Junction25 "Transmission Line12.c_out" as Connection150
@@ -1047,31 +1754,566 @@ model "Frequency support of renewable grid using large scale ESS." {
             connect "Transmission Line12.a_in" Tr9.prm_3 as Connection158
             connect "Transmission Line12.b_in" Tr9.prm_2 as Connection159
             connect "Transmission Line12.c_in" Tr9.prm_1 as Connection160
-            connect "3 ph WRSYNC Generic11.C" "BUS 32 (Three-phase Meter4)5.C-" as Connection161
+            connect "3 ph WRSYNC Generic11.C" "Bus 39.C-" as Connection161
             [
                 breakpoints = 864, 4500; 864, 4424; 896, 4420
             ]
-            connect "3 ph WRSYNC Generic11.B" "BUS 32 (Three-phase Meter4)5.B-" as Connection162
+            connect "3 ph WRSYNC Generic11.B" "Bus 39.B-" as Connection162
             [
                 breakpoints = 1004, 4536
             ]
-            connect "3 ph WRSYNC Generic11.A" "BUS 32 (Three-phase Meter4)5.A-" as Connection163
+            connect "3 ph WRSYNC Generic11.A" "Bus 39.A-" as Connection163
             [
                 breakpoints = 1052, 4432; 1096, 4432
             ]
-            connect "BUS 32 (Three-phase Meter4)5.C+" Junction28 as Connection164
+            connect "Bus 39.C+" Junction28 as Connection164
             connect Junction28 "Transmission Line13.c_out" as Connection165
             connect "Constant Impedance Load10.C" Junction28 as Connection166
-            connect "BUS 32 (Three-phase Meter4)5.B+" Junction29 as Connection167
+            connect "Bus 39.B+" Junction29 as Connection167
             connect Junction29 "Transmission Line13.b_out" as Connection168
             connect "Constant Impedance Load10.B" Junction29 as Connection169
-            connect "BUS 32 (Three-phase Meter4)5.A+" Junction30 as Connection170
+            connect "Bus 39.A+" Junction30 as Connection170
             connect Junction30 "Transmission Line13.a_out" as Connection171
             connect "Constant Impedance Load10.A" Junction30 as Connection172
+            connect "Transmission Line14.b_in" "BUS 23.B-" as Connection173
+            connect "Transmission Line14.c_in" "BUS 23.C-" as Connection174
+            connect "Transmission Line14.a_in" "BUS 23.A-" as Connection175
+            connect "Transmission Line17.c_out" Junction31 as Connection185
+            connect Junction31 "BUS 23.C+" as Connection186
+            connect "Transmission Line 22-23.c_out" Junction31 as Connection187
+            [
+                breakpoints = 10744, 6760
+            ]
+            connect "BUS 23.B+" Junction32 as Connection188
+            connect Junction32 "Transmission Line17.b_out" as Connection189
+            connect "Transmission Line 22-23.b_out" Junction32 as Connection190
+            connect "BUS 23.A+" Junction33 as Connection191
+            connect Junction33 "Transmission Line17.a_out" as Connection192
+            connect "Transmission Line 22-23.a_out" Junction33 as Connection193
+            connect Tr6.sec_1 "Transmission Line18.c_out" as Connection194
+            connect Tr6.sec_2 "Transmission Line18.b_out" as Connection195
+            connect Tr6.sec_3 "Transmission Line18.a_out" as Connection196
+            [
+                breakpoints = 11496, 5308; 11488, 5360
+            ]
+            connect "Transmission Line20.c_in" "BUS 21.C-" as Connection212
+            [
+                breakpoints = 11064, 5136
+            ]
+            connect "Transmission Line20.b_in" "BUS 21.B-" as Connection213
+            connect "Transmission Line20.a_in" "BUS 21.A-" as Connection214
+            [
+                breakpoints = 11272, 5140
+            ]
+            connect "Transmission Line18.c_in" Junction34 as Connection215
+            [
+                breakpoints = 11080, 5552; 11124, 5552
+            ]
+            connect Junction34 "BUS 22.C+" as Connection216
+            [
+                breakpoints = 11124, 5628
+            ]
+            connect "Transmission Line20.c_out" Junction34 as Connection217
+            [
+                breakpoints = 11120, 5600; 11120, 5592
+            ]
+            connect "Transmission Line18.b_in" Junction35 as Connection218
+            [
+                breakpoints = 11216, 5424
+            ]
+            connect Junction35 "BUS 22.B+" as Connection219
+            [
+                breakpoints = 11224, 5624
+            ]
+            connect "Transmission Line20.b_out" Junction35 as Connection220
+            connect "BUS 22.A+" Junction36 as Connection221
+            [
+                breakpoints = 11320, 5612; 11256, 5596
+            ]
+            connect Junction36 "Transmission Line18.a_in" as Connection222
+            connect "Transmission Line20.a_out" Junction36 as Connection223
+            connect "Transmission Line19.c_in" Junction37 as Connection233
+            [
+                breakpoints = 10428, 4640
+            ]
+            connect "Transmission Line21.c_in" Junction37 as Connection235
+            connect "Transmission Line19.b_in" Junction38 as Connection236
+            [
+                breakpoints = 11140, 4580
+            ]
+            connect "Transmission Line21.b_in" Junction38 as Connection238
+            [
+                breakpoints = 10532, 4592
+            ]
+            connect "Transmission Line19.a_in" Junction39 as Connection239
+            [
+                breakpoints = 11176, 4548
+            ]
+            connect "Transmission Line21.a_in" Junction39 as Connection241
+            [
+                breakpoints = 10644, 4596; 10644, 4552
+            ]
+            connect Tr3.sec_1 "Transmission Line15.c_out" as Connection242
+            [
+                breakpoints = 10092, 7196
+            ]
+            connect Tr3.sec_2 "Transmission Line15.b_out" as Connection243
+            connect Tr3.sec_3 "Transmission Line15.a_out" as Connection244
+            [
+                breakpoints = 10216, 7200; 10144, 7196
+            ]
+            connect "Transmission Line16.c_out" Tr2.sec_1 as Connection248
+            connect "Transmission Line16.b_out" Tr2.sec_2 as Connection249
+            connect "Transmission Line16.a_out" Tr2.sec_3 as Connection250
+            connect "Transmission Line16.c_in" "BUS 20 (Three-phase Meter4)5.C-" as Connection251
+            [
+                breakpoints = 9288, 6924
+            ]
+            connect "Transmission Line16.b_in" "BUS 20 (Three-phase Meter4)5.B-" as Connection252
+            [
+                breakpoints = 9384, 6892
+            ]
+            connect "Transmission Line16.a_in" "BUS 20 (Three-phase Meter4)5.A-" as Connection253
+            [
+                breakpoints = 9484, 6884
+            ]
+            connect Tr10.prm_3 "BUS 20 (Three-phase Meter4)5.A+" as Connection254
+            connect Tr10.prm_2 "BUS 20 (Three-phase Meter4)5.B+" as Connection255
+            connect Tr10.prm_1 "BUS 20 (Three-phase Meter4)5.C+" as Connection256
+            connect "Transmission Line15.a_in" Junction40 as Connection257
+            [
+                breakpoints = 10132, 6656; 9888, 6652
+            ]
+            connect Junction40 "BUS 19 (Three-phase Meter4)6.A-" as Connection258
+            connect Tr10.sec_3 Junction40 as Connection259
+            [
+                breakpoints = 9524, 6564; 9796, 6568
+            ]
+            connect "Transmission Line15.b_in" Junction41 as Connection260
+            [
+                breakpoints = 10104, 6684; 9788, 6684
+            ]
+            connect Junction41 "BUS 19 (Three-phase Meter4)6.B-" as Connection261
+            connect Tr10.sec_2 Junction41 as Connection262
+            [
+                breakpoints = 9412, 6540
+            ]
+            connect "Transmission Line15.c_in" Junction42 as Connection263
+            [
+                breakpoints = 9984, 6712; 9700, 6676
+            ]
+            connect Junction42 "BUS 19 (Three-phase Meter4)6.C-" as Connection264
+            connect Tr10.sec_1 Junction42 as Connection265
+            [
+                breakpoints = 9324, 6524
+            ]
+            connect "Transmission Line22.c_out" "BUS 19 (Three-phase Meter4)6.C+" as Connection266
+            [
+                breakpoints = 9696, 6404; 9600, 6408
+            ]
+            connect "Transmission Line22.b_out" "BUS 19 (Three-phase Meter4)6.B+" as Connection267
+            connect "Transmission Line22.a_out" "BUS 19 (Three-phase Meter4)6.A+" as Connection268
+            [
+                breakpoints = 9732, 6416
+            ]
+            connect Junction39 Junction43 as Connection269
+            [
+                breakpoints = 10640, 4552
+            ]
+            connect Junction43 "BUS 16.A-" as Connection270
+            connect "Transmission Line22.a_in" Junction43 as Connection271
+            [
+                breakpoints = 10644, 4728; 10600, 4668; 10600, 4544
+            ]
+            connect Junction38 Junction44 as Connection272
+            [
+                breakpoints = 10528, 4576
+            ]
+            connect Junction44 "BUS 16.B-" as Connection273
+            connect "Transmission Line22.b_in" Junction44 as Connection274
+            [
+                breakpoints = 9644, 4688; 10508, 4680
+            ]
+            connect Junction37 Junction45 as Connection275
+            connect Junction45 "BUS 16.C-" as Connection276
+            connect "Transmission Line22.c_in" Junction45 as Connection277
+            [
+                breakpoints = 9684, 4548
+            ]
+            connect "BUS 34 (Three-phase Meter4)2.A+" "Constant Impedance Load11.A" as Connection326
+            [
+                breakpoints = 11264, 7052
+            ]
+            connect "Bus 28.C+" "Constant Impedance Load17.C" as Connection339
+            [
+                breakpoints = 10404, 2388
+            ]
+            connect "BUS 34 (Three-phase Meter4)2.B+" "Constant Impedance Load11.B" as Connection332
+            [
+                breakpoints = 11168, 7052
+            ]
+            connect "Bus 28.B+" "Constant Impedance Load17.B" as Connection340
+            [
+                breakpoints = 10500, 2372
+            ]
+            connect "Constant Impedance Load11.C" "BUS 34 (Three-phase Meter4)2.C+" as Connection342
+            [
+                breakpoints = 11072, 7068
+            ]
+            connect "Bus 28.A+" "Constant Impedance Load17.A" as Connection343
+            [
+                breakpoints = 10596, 2372
+            ]
+            connect "Constant Impedance Load18.C" "Bus 26.C+" as Connection360
+            [
+                breakpoints = 9692, 2388
+            ]
+            connect "Constant Impedance Load19.B" "Bus 29.B+" as Connection364
+            [
+                breakpoints = 11276, 2376
+            ]
+            connect "Bus 26.B+" "Constant Impedance Load18.B" as Connection362
+            [
+                breakpoints = 9788, 2372
+            ]
+            connect "Bus 26.A+" "Constant Impedance Load18.A" as Connection363
+            [
+                breakpoints = 9884, 2372
+            ]
+            connect "Bus 29.A+" "Constant Impedance Load19.A" as Connection361
+            [
+                breakpoints = 11372, 2376
+            ]
+            connect "Constant Impedance Load19.C" "Bus 29.C+" as Connection359
+            [
+                breakpoints = 11180, 2392
+            ]
+            connect "Transmission Line17.c_in" "Bus 24.C-" as Connection365
+            [
+                breakpoints = 10584, 6164; 10468, 6160
+            ]
+            connect "Transmission Line17.b_in" "Bus 24.B-" as Connection366
+            [
+                breakpoints = 10576, 6152
+            ]
+            connect "Transmission Line17.a_in" "Bus 24.A-" as Connection367
+            [
+                breakpoints = 10672, 6176
+            ]
+            connect "Bus 24.C+" Junction46 as Connection368
+            [
+                breakpoints = 10292, 6060; 10300, 6060
+            ]
+            connect Junction46 "Constant Impedance Load13.C" as Connection369
+            [
+                breakpoints = 10300, 5948
+            ]
+            connect "Transmission Line21.c_out" Junction46 as Connection370
+            [
+                breakpoints = 10236, 5744; 10220, 5976; 10296, 5976; 10296, 5976; 10296, 5980; 10296, 5978
+            ]
+            connect "Bus 24.B+" Junction47 as Connection371
+            [
+                breakpoints = 10388, 6044
+            ]
+            connect Junction47 "Constant Impedance Load13.B" as Connection372
+            connect "Transmission Line21.b_out" Junction47 as Connection373
+            [
+                breakpoints = 10300, 5764; 10256, 6000
+            ]
+            connect "Constant Impedance Load13.A" Junction48 as Connection374
+            connect Junction48 "Bus 24.A+" as Connection375
+            [
+                breakpoints = 10484, 6044
+            ]
+            connect "Transmission Line21.a_out" Junction48 as Connection376
+            [
+                breakpoints = 10504, 5768; 10456, 5984
+            ]
+            connect "BUS 16.C+" Junction49 as Connection377
+            connect Junction49 "Transmission Line23.c_out" as Connection378
+            connect "Constant Impedance Load15.C" Junction49 as Connection379
+            connect "BUS 16.B+" Junction50 as Connection380
+            connect Junction50 "Transmission Line23.b_out" as Connection381
+            [
+                breakpoints = 10496, 4392
+            ]
+            connect "Constant Impedance Load15.B" Junction50 as Connection382
+            connect "BUS 16.A+" Junction51 as Connection383
+            connect Junction51 "Transmission Line23.a_out" as Connection384
+            [
+                breakpoints = 10524, 4372
+            ]
+            connect "Constant Impedance Load15.A" Junction51 as Connection385
+            [
+                breakpoints = 10828, 4412; 10632, 4400
+            ]
+            connect "BUS 21.C+" Junction52 as Connection386
+            connect Junction52 "Transmission Line19.c_out" as Connection387
+            [
+                breakpoints = 11072, 4920; 11148, 4912
+            ]
+            connect "Constant Impedance Load14.C" Junction52 as Connection388
+            [
+                breakpoints = 11072, 4956
+            ]
+            connect "BUS 21.B+" Junction53 as Connection389
+            connect Junction53 "Transmission Line19.b_out" as Connection390
+            connect "Constant Impedance Load14.B" Junction53 as Connection391
+            connect "BUS 21.A+" Junction54 as Connection392
+            connect Junction54 "Transmission Line19.a_out" as Connection393
+            [
+                breakpoints = 11188, 4908
+            ]
+            connect "Constant Impedance Load14.A" Junction54 as Connection394
+            connect "Transmission Line 22-23.a_in" Junction55 as Connection395
+            [
+                breakpoints = 11336, 5808
+            ]
+            connect Junction55 "BUS 22.A-" as Connection396
+            connect "Constant Impedance Load12.A" Junction55 as Connection397
+            [
+                breakpoints = 11516, 5804
+            ]
+            connect "Transmission Line 22-23.b_in" Junction56 as Connection398
+            connect Junction56 "BUS 22.B-" as Connection399
+            [
+                breakpoints = 11228, 5748
+            ]
+            connect "Constant Impedance Load12.B" Junction56 as Connection400
+            connect "Transmission Line 22-23.c_in" Junction57 as Connection401
+            [
+                breakpoints = 11124, 5796
+            ]
+            connect Junction57 "BUS 22.C-" as Connection402
+            connect "Constant Impedance Load12.C" Junction57 as Connection403
+            connect "Constant Impedance Load16.A" "BUS 17.A+" as Connection404
+            [
+                breakpoints = 9628, 3964
+            ]
+            connect "Constant Impedance Load16.B" "BUS 17.B+" as Connection405
+            [
+                breakpoints = 9540, 4052
+            ]
+            connect "Constant Impedance Load16.C" "BUS 17.C+" as Connection406
+            [
+                breakpoints = 9484, 4172
+            ]
+            connect "Transmission Line23.c_in" Junction58 as Connection410
+            [
+                breakpoints = 10172, 4160
+            ]
+            connect Junction58 "BUS 17.C-" as Connection411
+            connect "Transmission Line24.c_out" Junction58 as Connection412
+            connect "Transmission Line23.b_in" Junction59 as Connection413
+            [
+                breakpoints = 10472, 4024
+            ]
+            connect Junction59 "BUS 17.B-" as Connection414
+            [
+                breakpoints = 9816, 4064
+            ]
+            connect "Transmission Line24.b_out" Junction59 as Connection415
+            connect "Transmission Line23.a_in" Junction60 as Connection416
+            [
+                breakpoints = 10492, 3956; 10492, 3964
+            ]
+            connect Junction60 "BUS 17.A-" as Connection417
+            [
+                breakpoints = 9764, 3964
+            ]
+            connect "Transmission Line24.a_out" Junction60 as Connection418
+            connect "Transmission Line24.c_in" "Bus 27.C-" as Connection419
+            [
+                breakpoints = 9928, 3564
+            ]
+            connect "Transmission Line24.b_in" "Bus 27.B-" as Connection420
+            [
+                breakpoints = 10020, 3544
+            ]
+            connect "Transmission Line24.a_in" "Bus 27.A-" as Connection421
+            [
+                breakpoints = 10116, 3608
+            ]
+            connect "Bus 27.C+" Junction61 as Connection422
+            connect Junction61 "Constant Impedance Load20.C" as Connection423
+            [
+                breakpoints = 9924, 3432
+            ]
+            connect "Transmission Line25.c_out" Junction61 as Connection424
+            [
+                breakpoints = 9904, 3208
+            ]
+            connect "Bus 27.B+" Junction62 as Connection425
+            [
+                breakpoints = 10020, 3416
+            ]
+            connect Junction62 "Constant Impedance Load20.B" as Connection426
+            connect "Transmission Line25.b_out" Junction62 as Connection427
+            [
+                breakpoints = 9920, 3224; 9912, 3404
+            ]
+            connect "Bus 27.A+" Junction63 as Connection428
+            [
+                breakpoints = 10116, 3416
+            ]
+            connect Junction63 "Constant Impedance Load20.A" as Connection429
+            connect "Transmission Line25.a_out" Junction63 as Connection430
+            [
+                breakpoints = 10180, 3232; 10132, 3404
+            ]
+            connect "Transmission Line25.c_in" Junction64 as Connection434
+            [
+                breakpoints = 9700, 2824
+            ]
+            connect Junction64 "Bus 26.C-" as Connection435
+            connect "Transmission Line26.c_in" Junction64 as Connection436
+            connect "Transmission Line25.b_in" Junction65 as Connection437
+            [
+                breakpoints = 10040, 2784; 9780, 2764
+            ]
+            connect Junction65 "Bus 26.B-" as Connection438
+            connect "Transmission Line26.b_in" Junction65 as Connection439
+            connect "Transmission Line25.a_in" Junction66 as Connection440
+            [
+                breakpoints = 10060, 2768; 9936, 2752
+            ]
+            connect Junction66 "Bus 26.A-" as Connection441
+            connect "Transmission Line26.a_in" Junction66 as Connection442
+            connect "Transmission Line26.c_out" Junction67 as Connection446
+            connect Junction67 "Bus 28.C-" as Connection447
+            [
+                breakpoints = 10404, 2540
+            ]
+            connect "Transmission Line27.c_in" Junction67 as Connection448
+            connect "Transmission Line26.b_out" Junction68 as Connection449
+            connect Junction68 "Bus 28.B-" as Connection450
+            [
+                breakpoints = 10504, 2520
+            ]
+            connect "Transmission Line27.b_in" Junction68 as Connection451
+            connect "Transmission Line26.a_out" Junction69 as Connection452
+            [
+                breakpoints = 10596, 2504
+            ]
+            connect Junction69 "Bus 28.A-" as Connection453
+            connect "Transmission Line27.a_in" Junction69 as Connection454
+            [
+                breakpoints = 10788, 2488
+            ]
+            connect "Transmission Line27.c_out" Junction70 as Connection458
+            connect Junction70 "Bus 29.C-" as Connection459
+            connect Tr7.sec_1 Junction70 as Connection460
+            [
+                breakpoints = 11232, 2568
+            ]
+            connect "Transmission Line27.b_out" Junction71 as Connection461
+            connect Junction71 "Bus 29.B-" as Connection462
+            [
+                breakpoints = 11276, 2544
+            ]
+            connect Tr7.sec_2 Junction71 as Connection463
+            [
+                breakpoints = 11616, 2552; 11264, 2536
+            ]
+            connect "Transmission Line27.a_out" Junction72 as Connection464
+            [
+                breakpoints = 11372, 2524
+            ]
+            connect Junction72 "Bus 29.A-" as Connection465
+            connect Tr7.sec_3 Junction72 as Connection466
+            [
+                breakpoints = 11832, 2508
+            ]
+            connect "Bus 1.C+" Junction73 as Connection467
+            connect "Bus 1.B+" Junction74 as Connection469
+            connect "Constant Impedance Load21.A" Junction75 as Connection472
+            connect "Transmission Line13.c_in" "Bus 1.C-" as Connection473
+            [
+                breakpoints = 1472, 3684
+            ]
+            connect "Transmission Line13.b_in" "Bus 1.B-" as Connection474
+            [
+                breakpoints = 984, 3708; 1564, 3688
+            ]
+            connect "Transmission Line13.a_in" "Bus 1.A-" as Connection475
+            [
+                breakpoints = 992, 3744; 1676, 3736
+            ]
+            connect "Bus 2.C+" Junction76 as Connection476
+            connect "Constant Impedance Load22.C" Junction76 as Connection477
+            connect "Bus 2.B+" Junction77 as Connection478
+            connect "Constant Impedance Load22.B" Junction77 as Connection479
+            connect "Bus 2.A+" Junction78 as Connection480
+            connect "Constant Impedance Load22.A" Junction78 as Connection481
+            connect "Constant Impedance Load21.C" Junction79 as Connection482
+            connect Junction79 Junction73 as Connection483
+            connect "Transmission Line28.c_out" Junction79 as Connection484
+            connect "Constant Impedance Load21.B" Junction80 as Connection485
+            connect Junction80 Junction74 as Connection486
+            connect "Transmission Line28.b_out" Junction80 as Connection487
+            [
+                breakpoints = 2076, 3516
+            ]
+            connect "Bus 1.A+" Junction81 as Connection488
+            connect Junction81 Junction75 as Connection489
+            connect "Transmission Line28.a_out" Junction81 as Connection490
+            [
+                breakpoints = 2108, 3528
+            ]
+            connect "Transmission Line28.a_in" "Bus 2.A-" as Connection491
+            [
+                breakpoints = 2824, 3188
+            ]
+            connect "Transmission Line28.b_in" "Bus 2.B-" as Connection492
+            [
+                breakpoints = 2104, 3148; 2728, 3116
+            ]
+            connect "Transmission Line28.c_in" "Bus 2.C-" as Connection493
+            [
+                breakpoints = 2092, 3112; 2596, 3076
+            ]
+            connect "Bus 25.C+" Junction82 as Connection494
+            connect "Bus 25.B+" Junction83 as Connection496
+            connect "Constant Impedance Load23.B" Junction83 as Connection497
+            connect "Bus 25.A+" Junction84 as Connection498
+            connect "Constant Impedance Load23.A" Junction84 as Connection499
+            connect "Transmission Line29.a_in" "Bus 25.A-" as Connection500
+            [
+                breakpoints = 3584, 2588
+            ]
+            connect "Transmission Line29.b_in" "Bus 25.B-" as Connection501
+            [
+                breakpoints = 3156, 2552; 3476, 2556
+            ]
+            connect "Transmission Line29.c_in" "Bus 25.C-" as Connection502
+            [
+                breakpoints = 3132, 2540; 3376, 2548
+            ]
+            connect Tr9.sec_1 "Transmission Line30.a_in" as Connection503
+            connect Tr9.sec_2 "Transmission Line30.b_in" as Connection504
+            [
+                breakpoints = 3384, 1876
+            ]
+            connect Tr9.sec_3 "Transmission Line30.c_in" as Connection505
+            [
+                breakpoints = 3300, 1916
+            ]
+            connect "Constant Impedance Load23.C" Junction85 as Connection506
+            connect Junction85 Junction82 as Connection507
+            connect "Transmission Line30.a_out" Junction85 as Connection508
+            [
+                breakpoints = 3396, 2420
+            ]
+            connect "Transmission Line30.b_out" Junction83 as Connection509
+            connect "Transmission Line30.c_out" Junction84 as Connection510
+            [
+                breakpoints = 3612, 2204
+            ]
         }
         [
-            position = 8124, 8016
-            size = 112, 56
+            position = 8112, 8012
+            size = 136, 56
         ]
     }
 
